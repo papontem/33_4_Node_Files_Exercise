@@ -1,0 +1,19 @@
+{
+  "name": "33_4_node_files_exercise",
+  "version": "1.0.0",
+  "description": "exercise where we worked with node, npm, and file api.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/papontem/33_4_Node_Files_Exercise.git"
+  },
+  "author": "Phedias A.M.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/papontem/33_4_Node_Files_Exercise/issues"
+  },
+  "homepage": "https://github.com/papontem/33_4_Node_Files_Exercise#readme"
+}
