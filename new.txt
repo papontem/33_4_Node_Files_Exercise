@@ -1,0 +1,4 @@
+This is a text file named one.txt .
+Also the first read.
+Also the second read.
+Also the third read.
