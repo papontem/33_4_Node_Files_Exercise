@@ -26,7 +26,7 @@ if (process.argv[2] == "--out") {
 } else {
 	source = process.argv[2];
 	console.log("source:", source);
-}
+};
 
 // Read local resource (file)
 async function cat(path) {
@@ -39,7 +39,7 @@ async function cat(path) {
 			reject(error);
 		}
 	});
-}
+};
 
 // get online resource (URL)
 async function webCat(url) {
@@ -52,7 +52,7 @@ async function webCat(url) {
 			reject(error);
 		}
 	});
-}
+};
 
 // Helpful validation functions
 
@@ -65,7 +65,7 @@ function isURL(input) {
 		// console.error(`The input: ${input} was not a valid URL: ${error}`);
 		return false;
 	}
-}
+};
 
 // validate if input is a file path
 function isPATH(input) {
@@ -76,7 +76,7 @@ function isPATH(input) {
 		// console.error(`The input: ${input} was not a valid path string: ${error}`);
 		return false;
 	}
-}
+};
 
 // function to determine if we should get the url or read the file at path based on input
 async function getReadWriteData(source, outputFilePath = null) {
@@ -113,7 +113,7 @@ async function getReadWriteData(source, outputFilePath = null) {
 		console.error("ERROR: Destination sent was not a valid path or URL");
 		process.exit(1);
 	}
-}
+};
 
 // function that will take output file path and overwrite it with desired data
 function writeToFile(outputFilePath, data) {
@@ -125,6 +125,6 @@ function writeToFile(outputFilePath, data) {
 		console.error(`ERROR: Failed to write to file: ${error}`);
 		process.exit(1);
 	}
-}
+};
 
 getReadWriteData(source, outputFilePath);
