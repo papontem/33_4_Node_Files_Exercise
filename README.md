@@ -4,10 +4,14 @@ We will complete the following tasks using asynchronous functions and await prom
 
 ## How To Run
 - Download a clone of this repo
-- navigate to the directory using your teminal, use the node init command and the node package manager init commad to get all the dependcies loaded and your node repl ready at any time.
+- Navigate to the repository's directory using your terminal.
+- Install the projects dependencies with the following command:
 ```
-$ node init
-$ npm init
+$ npm install
+```
+- to start the Node.js REPL (Read-Eval-Print Loop), you simply use the command:
+```
+$ node
 ```
 - then you can call node to run any of the step.js scripts to read resources:
   - step1 can read and log to console local files:
@@ -31,7 +35,7 @@ $ node step3.js http://google.com
 <!doctype html><html ...
 ```
   -
-      - while step3 is the only one that allows the use of an optional flagg `--out` to write the read resource data into a file:
+      - while step3 is the only one that allows the use of an optional flag: `--out` to write the files data into a seperate file:
 ```
 $ node step3.js --out new.txt one.txt
 $ # no output, but new.txt contains contents of one.txt
